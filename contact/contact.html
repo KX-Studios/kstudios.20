@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | KX Studios</title>
+    <meta name="description" content="Get in touch with KX Studios for your digital service needs">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="image/png" href="../kx logo.png">
+</head>
+
+<body>
+    <!-- Header (same as index.html) -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">
+                    <img src="../kx logo.png" id="logo_image" alt="KX Studios Logo">
+                    <span class="logo-text">S<span>t</span>udios</span>
+                </a>
+                <nav class="nav-desktop">
+                    <ul class="nav-menu">
+                        <li><a href="../index.html" class="nav-link">Home</a></li>
+                        <li><a href="../services/services.html" class="nav-link">Services</a></li>
+                        <li><a href="../about/about.html" class="nav-link">About Us</a></li>
+                        <li><a href="../pricing/pricing.html" class="nav-link">Pricing</a></li>
+                        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                    </ul>
+                </nav>
+                <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation (same as index.html) -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu-container">
+            <button id="close-menu-btn" class="close-menu-btn" aria-label="Close Menu">
+                <i class="fas fa-times"></i>
+            </button>
+            <nav class="nav-mobile">
+                <ul class="nav-menu">
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li><a href="../services/services.html" class="nav-link">Services</a></li>
+                    <li><a href="../about/about.html" class="nav-link">About Us</a></li>
+                    <li><a href="../pricing/pricing.html" class="nav-link active">Pricing</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                    <!--<li><a href="/frontend/portfolio/portfolio.html" class="nav-link">Portfolio</a></li>-->
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="contact-hero-content">
+                <h1 class="reveal-left">Get In <span class="highlight">Touch</span></h1>
+                <p class="reveal-left">We'd love to hear about your project and how we can help</p>
+            </div>
+        </div>
+    </section>
+    <!-- Wave Divider -->
+    <div class="wave-divider">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                opacity=".25" fill="var(--primary-color)"></path>
+            <path
+                d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                opacity=".5" fill="var(--primary-color)"></path>
+            <path
+                d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                fill="var(--primary-color)"></path>
+        </svg>
+    </div>
+
+    <!-- Contact Main Section -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info reveal-left">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Our Location</h3>
+                            <p>123 Digital Avenue<br>Pretoria, Gauteng<br>South Africa</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Us</h3>
+                            <p>kxsons@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Call Us</h3>
+                            <p>+27 61 545 5235 </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Business Hours</h3>
+                            <p>Monday - Sunday: 8:00 AM - 10:00 PM<br>Weekend: Closed</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <h3>Follow Us</h3>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/profile.php?id=61576010321027" class="social-icon"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/kx.tech.studio?utm_source=qr&igsh=c3lhY280ZHNlMjls"
+                                class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://youtube.com/@kx.tech.studio?si=GKdVbt_c8kNnWBAE" class="social-icon"><i
+                                    class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container reveal-right">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you as soon as possible</p>
+
+                    <form id="contactForm" class="contact-form" onsubmit="return handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service">
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="web">Web Design & Development</option>
+                                <!--<option value="social">Social Media Management</option>
+                                <option value="video">Video Production</option>
+                                <option value="branding">Branding</option>
+                                <option value="other">Other Services</option>-->
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <span class="btn-text">Send Message via WhatsApp</span>
+                                <span class="btn-loading"><i class="fas fa-spinner fa-spin"></i></span>
+                            </button>
+                        </div>
+                </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.256104584562!2d28.169276674307778!3d-25.662803742141584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ebfd96ff17b974b%3A0x9bf3398433944762!2s443%20Burger%20St%2C%20Pretoria%20North%2C%20Pretoria%2C%200116!5e0!3m2!1sen!2sza!4v1747348729632!5m2!1sen!2sza"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="reveal-left">Ready to start your project?</h2>
+                <p class="reveal-left">Book a free consultation with our team today</p>
+                <a href="contact.html" class="btn btn-secondary btn-lg reveal-right">Schedule a
+                    Call</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <a href="#" class="footer-logo">
+                        <img src="../kx logo.png" alt="KX Studios Logo" class="footer-logo-img">
+                        <span class="logo-text">S<span>t</span>udios</span>
+                    </a>
+                    <p class="footer-description">
+                        Helping businesses transform their digital presence since 2025. We specialize in web design for
+                        Individials and Enterprises.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=61576010321027" class="social-icon"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/kx.tech.studio?utm_source=qr&igsh=c3lhY280ZHNlMjls "
+                            class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://youtube.com/@kx.tech.studio?si=GKdVbt_c8kNnWBAE" class="social-icon"><i
+                                class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Web Design & Development</a></li>
+                        <li><a href="#">Social Media Management</a></li>
+                        <!--<li><a href="#">Video Production & Editing</a></li>
+                        <li><a href="#">SEO & Content Marketing</a></li>-->
+                        <li><a href="#">E-commerce Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html" class="nav-link">Home</a></li>
+                        <li><a href="../services/services.html" class="nav-link">Services</a></li>
+                        <li><a href="../about/about.html" class="nav-link">About Us</a></li>
+                        <li><a href="../pricing/pricing.html" class="nav-link">Pricing</a></li>
+                        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                    </ul>
+                </div>
+                <!--news letter-->
+                <!--<div class="footer-column">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="footer-description">Subscribe to our newsletter to receive updates and marketing tips.</p>
+                    <form class="footer-newsletter">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn-subscribe">Subscribe</button>
+                    </form>
+                </div>-->
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 KX Studios. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" aria-label="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <div id="customModal" class="modal-overlay">
+        <div class="modal-box">
+            <div class="modal-icon">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <h3>Ready to Send?</h3>
+            <p>Your message has been drafted successfully. Click the button below to open WhatsApp and send it to KX
+                Studios.</p>
+
+            <div class="modal-actions">
+                <button id="cancelBtn" class="btn-cancel">Cancel</button>
+                <a id="proceedBtn" href="#" target="_blank" class="btn btn-primary">
+                    Open WhatsApp <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast-container"></div>
+    <!-- Scripts -->
+    <script src="/frontend/script.js"></script>
+    <script src="contact.js"></script>
+</body>
+
+</html>

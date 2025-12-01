@@ -1,0 +1,123 @@
+/* services.css */
+/* Services Hero Section */
+.services-hero {
+    padding: 120px 0 60px;
+    background-color: var(--background-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.services-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+    z-index: 0;
+}
+
+.services-hero-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.services-hero h1 {
+    font-size: 4.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.services-hero p {
+    font-size: 1.8rem;
+    color: var(--text-medium);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Detailed Services Section */
+.services-detailed {
+    padding: 80px 0;
+    background-color: var(--background-primary);
+}
+
+.service-card.detailed {
+    padding: 3rem;
+    margin-bottom: 3rem;
+    border: 1px solid var(--border-color);
+}
+
+.service-card.detailed .service-icon {
+    margin-bottom: 2rem;
+}
+
+.service-card.detailed h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.service-content p {
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+.service-features {
+    margin-bottom: 3rem;
+}
+
+.service-features li {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.service-pricing {
+    margin: 2.5rem 0;
+}
+
+.service-pricing h4 {
+    font-size: 1.8rem;
+    color: var(--text-medium);
+}
+
+.service-pricing span {
+    color: var(--primary-color);
+    font-weight: var(--font-weight-bold);
+}
+
+/* Services CTA */
+.services-cta {
+    background-color: var(--background-secondary);
+    text-align: center;
+}
+
+.services-cta h2 {
+    margin-bottom: 1.5rem;
+}
+
+.services-cta p {
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    color: var(--text-medium);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .services-hero {
+        padding: 100px 0 40px;
+    }
+    
+    .services-hero h1 {
+        font-size: 3.2rem;
+    }
+    
+    .services-hero p {
+        font-size: 1.6rem;
+    }
+    
+    .service-card.detailed {
+        padding: 2.5rem;
+    }
+}

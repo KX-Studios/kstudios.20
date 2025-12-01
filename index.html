@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studios | Web Design | Social Media | Video Production</title>
+    <meta name="description" content="Premium digital services including web design, social media management, and video production in Pretoria, South Africa.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="../kx logo.png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <img src="kx logo.png" id="logo_image" alt="KX Studios Logo">
+                    <span class="logo-text">S<span>t</span>udios</span>
+                </a>
+                <nav class="nav-desktop">
+                    <ul class="nav-menu">
+                        <li><a href="services/services.html" class="nav-link">Services</a></li>
+                        <li><a href="about/about.html" class="nav-link">About Us</a></li>
+                        <!--<li><a href="portfolio/portfolio.html" class="nav-link">Portfolio</a></li>-->
+                        <li><a href="pricing/pricing.html" class="nav-link">Pricing</a></li>
+                        <li><a href="contact/contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle Navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu-container">
+            <button id="close-menu-btn" class="close-menu-btn" aria-label="Close Menu">
+                <i class="fas fa-times"></i>
+            </button>
+            <nav class="nav-mobile">
+                <ul class="mobile-nav-menu">
+                    <li><a href="services/services.html" class="mobile-nav-link">Services</a></li>
+                    <li><a href="about/about.html" class="mobile-nav-link">About Us</a></li>
+                    <!--<li><a href="portfolio/portfolio.html" class="mobile-nav-link">Portfolio</a></li>-->
+                    <li><a href="pricing/pricing.html" class="mobile-nav-link">Pricing</a></li>
+                    <li><a href="contact/contact.html" class="mobile-nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text reveal-left">
+                    <h1 class="hero-title">Elevate Your <span class="highlight">Digital Presence</span></h1>
+                    <p class="hero-description">Helping businesses and individuals build a strong digital presence with comprehensive designs that make them stand out.</p>
+                    <div class="hero-cta">
+                        <a href="contact/contact.html" class="btn btn-primary">Get a Free Consultation</a>
+                        <a href="portfolio/portfolio.html" class="btn btn-secondary">View Our Work</a>
+                    </div>
+                </div>
+                <div class="hero-image reveal-right">
+                    <div class="slideshow-container">
+                        <div class="slide">
+                            <i class="fas fa-laptop-code"></i>
+                            <p>Custom Website Development</p>
+                        </div>
+                        <div class="slide">
+                            <i class="fas fa-mobile-alt"></i>
+                            <p>Responsive Mobile Design</p>
+                        </div>
+                        <div class="slide">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>E-commerce Solutions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="var(--primary-color)"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" fill="var(--primary-color)"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="var(--primary-color)"></path>
+        </svg>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title reveal-bottom">Our <span class="highlight">Services</span></h2>
+                <p class="section-description">Here at KX Studios, we provide comprehensive digital solutions tailored to your business needs and goals.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal-item">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="service-title">Web Design & Development</h3>
+                    <p class="service-description">We design and develop websites that are not only visually appealing but also highly functional, responsive, and optimized for search engines.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Custom Website Design</li>
+                        <li><i class="fas fa-check"></i> Responsive Development</li>
+                        <li><i class="fas fa-check"></i> E-commerce Solutions</li>
+                        <li><i class="fas fa-check"></i> Content Management</li>
+                        <li><i class="fas fa-check"></i> SEO Optimization</li>
+                        <li><i class="fas fa-check"></i> Maintenance & Support</li>
+                    </ul>
+                    <a href="contact/contact.html" class="btn-service">Get Started</a>
+                </div>
+                <div class="service-card reveal-item">
+                    <div class="service-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <h3 class="service-title">Social Media Management</h3>
+                    <p class="service-description">We help businesses build a strong online presence, engage their target audience, and achieve their marketing goals through effective social media strategies.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Strategy Development</li>
+                        <li><i class="fas fa-check"></i> Content Planning</li>
+                        <li><i class="fas fa-check"></i> Community Engagement</li>
+                        <li><i class="fas fa-check"></i> Social Advertising</li>
+                        <li><i class="fas fa-check"></i> Analytics & Reporting</li>
+                        <li><i class="fas fa-check"></i> Influencer Marketing</li>
+                    </ul>
+                    <!--
+                    <a href="contact/contact.html" class="btn-service">Get Started</a>
+                -->
+                    <p>COMING SOON!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title reveal-bottom">Our <span class="highlight">Process</span></h2>
+                <p class="section-description">We follow a proven process to ensure successful project delivery</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step reveal-item">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="step-title">Discovery</h3>
+                    <p class="step-description">We begin by understanding your business, goals, and target audience through in-depth consultation.</p>
+                </div>
+                <div class="process-step reveal-item">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <h3 class="step-title">Strategy</h3>
+                    <p class="step-description">We develop a comprehensive strategy tailored to your specific needs and objectives.</p>
+                </div>
+                <div class="process-step reveal-item">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3 class="step-title">Design</h3>
+                    <p class="step-description">Our designers create visually appealing concepts that align with your brand identity.</p>
+                </div>
+                <div class="process-step reveal-item">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="step-title">Development</h3>
+                    <p class="step-description">We bring designs to life with clean, efficient, and responsive code.</p>
+                </div>
+                <div class="process-step reveal-item">
+                    <div class="step-number">05</div>
+                    <div class="step-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="step-title">Review</h3>
+                    <p class="step-description">We conduct thorough testing and review to ensure quality and performance.</p>
+                </div>
+                <div class="process-step reveal-item">
+                    <div class="step-number">06</div>
+                    <div class="step-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="step-title">Launch</h3>
+                    <p class="step-description">We deploy your project and provide ongoing support and optimization.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- Wave Divider -->
+        <div class="wave-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="var(--primary-color)"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" fill="var(--primary-color)"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" fill="var(--primary-color)"></path>
+            </svg>
+        </div>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image reveal-left">
+                    <img src="kxteam.jpg" alt="KX Studios Team" class="main-image">
+                </div>
+                <div class="about-text reveal-right">
+                    <div class="section-header">
+                        <h2 class="section-title">About <span class="highlight">Us</span></h2>
+                    </div>
+                    <p class="about-description">
+                        We are a dynamic and results-driven digital services agency based in Pretoria, Gauteng, South Africa. Our team of forever evolving young minds is passionate about helping businesses of all sizes achieve their online goals.
+                    </p>
+                    <p class="about-description">
+                        With a focus on collaboration, creativity, and cutting-edge technology, we deliver tailored solutions that make a real difference. We believe in building long-term partnerships with our clients and becoming an extension of their team.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Award-Winning Team</h4>
+                                <p>Our experienced team has received multiple industry awards for excellence in digital services.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-handshake"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Client-Focused Approach</h4>
+                                <p>We prioritize your business needs and work collaboratively to achieve your goals.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Results-Driven Solutions</h4>
+                                <p>We focus on delivering measurable results that impact your bottom line.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="about/about.html" class="btn btn-primary">Get to Know Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <!--<section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title reveal-bottom">Our <span class="highlight">Portfolio</span></h2>
+                <p class="section-description">Explore our recent projects and success stories</p>
+            </div>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="social">Social Media</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item reveal-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="https://cdn.pixabay.com/photo/2019/10/07/12/08/online-shopping-4532460_640.jpg" alt="E-commerce Website Project">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <h3>E-commerce Website</h3>
+                            <p>Web Design & Development</p>
+                            <a href="#" class="portfolio-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal-item" data-category="social">
+                    <div class="portfolio-img">
+                        <img src="https://images.pexels.com/photos/4549411/pexels-photo-4549411.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Social Media Campaign">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <h3>Product Launch Campaign</h3>
+                            <p>Social Media Management</p>
+                            <a href="#" class="portfolio-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal-item" data-category="web">
+                    <div class="portfolio-img">
+                        <img src="https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Restaurant Website">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <h3>Restaurant Website</h3>
+                            <p>Web Design & Development</p>
+                            <a href="#" class="portfolio-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item reveal-item" data-category="social">
+                    <div class="portfolio-img">
+                        <img src="https://images.pexels.com/photos/4549414/pexels-photo-4549414.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Social Media Content">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-content">
+                            <h3>Lifestyle Brand Content</h3>
+                            <p>Social Media Management</p>
+                            <a href="#" class="portfolio-link">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-cta">
+                <a href="services/services.html" class="btn btn-secondary">View All Projects</a>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- Pricing Section -->
+    <!--<section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title reveal-bottom">Our <span class="highlight">Pricing</span></h2>
+                <p class="section-description">Affordable plans for businesses of all sizes</p>
+            </div>
+            <div class="pricing-toggle">
+                <span class="toggle-label">Monthly</span>
+                <label class="switch">
+                    <input type="checkbox" id="pricing-toggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label">Annual <span class="discount">Save 20%</span></span>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card reveal-item">
+                    <div class="pricing-header">
+                        <h3 class="pricing-tier">Starter</h3>
+                        <div class="pricing-amount">
+                            <span class="price monthly">--</span>
+                            <span class="price annual">---</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="pricing-description">Perfect for small businesses just getting started</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Basic Website (5 pages)</li>
+                            <li><i class="fas fa-check"></i> Social Media Management (2 platforms)</li>
+                            <li><i class="fas fa-check"></i> 1 Short Video per month</li>
+                            <li><i class="fas fa-check"></i> Basic SEO Setup</li>
+                            <li><i class="fas fa-check"></i> Monthly Performance Report</li>
+                            <li class="not-included"><i class="fas fa-times"></i> Advanced Analytics</li>
+                            <li class="not-included"><i class="fas fa-times"></i> E-commerce Functionality</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="starter/starter.html" class="btn btn-outline-primary">Get Started</a>
+                    </div>
+                </div>
+                <div class="pricing-card featured reveal-item">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-tier">Professional</h3>
+                        <div class="pricing-amount">
+                            <span class="price monthly">---</span>
+                            <span class="price annual">---</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="pricing-description">Ideal for growing businesses requiring more features</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Custom Website (10 pages)</li>
+                            <li><i class="fas fa-check"></i> Social Media Management (4 platforms)</li>
+                            <li><i class="fas fa-check"></i> 2 Professional Videos per month</li>
+                            <li><i class="fas fa-check"></i> Comprehensive SEO Strategy</li>
+                            <li><i class="fas fa-check"></i> Bi-weekly Performance Reports</li>
+                            <li><i class="fas fa-check"></i> Advanced Analytics Dashboard</li>
+                            <li><i class="fas fa-check"></i> Basic E-commerce Functionality</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">-->
+                        <!--
+                        <a href="professional.html" class="btn btn-primary">Get Started</a>
+                    -->
+                        <!--<p>COMING SOON!</p>
+                    </div>
+                </div>
+                <div class="pricing-card reveal-item">
+                    <div class="pricing-header">
+                        <h3 class="pricing-tier">Enterprise</h3>
+                        <div class="pricing-amount">
+                            <span class="price monthly">---</span>
+                            <span class="price annual">---</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p class="pricing-description">Comprehensive solution for established businesses</p>
+                    </div>
+                    <div class="pricing-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Premium Custom Website (Unlimited pages)</li>
+                            <li><i class="fas fa-check"></i> Social Media Management (All platforms)</li>
+                            <li><i class="fas fa-check"></i> 4 Premium Videos per month</li>
+                            <li><i class="fas fa-check"></i> Advanced SEO & Content Strategy</li>
+                            <li><i class="fas fa-check"></i> Weekly Performance Reports</li>
+                            <li><i class="fas fa-check"></i> Enterprise Analytics Solution</li>
+                            <li><i class="fas fa-check"></i> Full E-commerce Functionality</li>
+                        </ul>
+                    </div>
+                    <div class="pricing-footer">
+                        <a href="enterprice/enterprice.html" class="btn btn-outline-primary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            <div class="pricing-notice">
+                <p>Not sure which plan is right for you? <a href="contact/contact.html">Contact us</a> for a custom quote.</p>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-text reveal-left">
+                    <h2 class="cta-title">Ready to transform your digital presence?</h2>
+                    <p class="cta-description">Let's work together to elevate your brand and achieve your business goals.</p>
+                </div>
+                <div class="cta-action reveal-right">
+                    <a href="/frontend/contact/contact.html" class="btn btn-primary btn-lg">Get Started Today</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+ <!-- Contact Section -->
+<!--<section id="contact" class="contact">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title reveal-bottom">Contact <span class="highlight">Us</span></h2>
+            <p class="section-description">Get in touch with our team to discuss your project</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Our Location</h3>
+                            <p>123 Main Street, Pretoria<br>Gauteng, 0001<br>South Africa</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Us</h3>
+                            <p>info@kxstudios.co.za<br>support@kxstudios.co.za</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Call Us</h3>
+                            <p>+27 (0) 12 345 6789<br>+27 (0) 87 654 3210</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Business Hours</h3>
+                            <p>Monday - Friday: 8:00 AM - 5:00 PM<br>Weekend: Closed</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container reveal-right">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service">
+                                <option value="" disabled selected>Service Interested In</option>
+                                <option value="web">Web Design & Development</option>
+                                <option value="social">Social Media Management</option>
+                                <option value="video">Video Production & Editing</option>
+                                <option value="seo">SEO & Content Marketing</option>
+                                <option value="other">Other Services</option>
+                            </select>
+                        </div>
+                        <div class="form-group full-width">
+                            <textarea id="message" name="message" placeholder="Tell us about your project" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group full-width">
+                            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <a href="#" class="footer-logo">
+                        <img src="/frontend/kx logo.png" alt="KX Studios Logo" class="footer-logo-img">
+                        <span class="logo-text">S<span>t</span>udios</span>
+                    </a>
+                    <p class="footer-description">
+                        Helping businesses transform their digital presence since 2015. We specialize in web design, social media management, and video production.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/profile.php?id=61576010321027" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/kx.tech.studio?utm_source=qr&igsh=c3lhY280ZHNlMjls " class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://youtube.com/@kx.tech.studio?si=GKdVbt_c8kNnWBAE" class="social-icon"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Web Design & Development</a></li>
+                        <li><a href="#">Social Media Management</a></li>
+                        <li><a href="#">Video Production & Editing</a></li>
+                        <li><a href="#">SEO & Content Marketing</a></li>
+                        <li><a href="#">E-commerce Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/frontend/index.html" class="nav-link active">Home</a></li>
+                        <li><a href="/frontend/services/services.html">Services</a></li>
+                        <li><a href="/frontend/about/about.html" class="nav-link">About Us</a></li>
+                        <!--<li><a href="/frontend/portfolio/portfolio.html" class="nav-link">Portfolio</a></li>-->
+                        <li><a href="/frontend/pricing/pricing.html">Pricing</a></li>
+                        <li><a href="/frontend/contact/contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p class="footer-description">Subscribe to our newsletter to receive updates and marketing tips.</p>
+                    <form class="footer-newsletter">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn-subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 KX Studios. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" aria-label="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

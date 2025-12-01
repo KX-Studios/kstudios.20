@@ -1,0 +1,514 @@
+/* contact.css */
+/* Contact Hero Section */
+.contact-hero {
+    padding: 120px 0 60px;
+    background-color: var(--background-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+    z-index: 0;
+}
+
+.contact-hero-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-hero h1 {
+    font-size: 4.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-hero p {
+    font-size: 1.8rem;
+    color: var(--text-medium);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Contact Main Section */
+.contact-main {
+    padding: 80px 0;
+    background-color: var(--background-primary);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.contact-info-card {
+    background-color: var(--background-tertiary);
+    border-radius: var(--border-radius-lg);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: flex-start;
+    transition: var(--transition-medium);
+    border: 1px solid var(--border-color);
+    padding-right: 70px;
+}
+
+.contact-info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.contact-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(59, 130, 246, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+    transition: var(--transition-medium);
+}
+
+.contact-info-card:hover .contact-icon {
+    transform: rotate(15deg);
+}
+
+.contact-details h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+    color: var(--text-dark);
+}
+
+.contact-details p {
+    color: var(--text-medium);
+    font-size: 1.5rem;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+.contact-social {
+    margin-top: 3rem;
+}
+
+.contact-social h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--background-tertiary);
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    transition: var(--transition-fast);
+    border: 1px solid var(--border-color);
+}
+
+.social-icon:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+.contact-form-container {
+    background-color: var(--background-tertiary);
+    border-radius: var(--border-radius-lg);
+    padding: 3rem;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+}
+
+.contact-form-container h2 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.contact-form-container p {
+    color: var(--text-medium);
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+    color: var(--text-medium);
+    font-weight: var(--font-weight-medium);
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    width: 100%;
+    padding: 1.2rem;
+    border-radius: var(--border-radius-md);
+    background-color: var(--background-secondary);
+    color: var(--text-dark);
+    border: 1px solid var(--border-color);
+    font-size: 1.5rem;
+    transition: var(--transition-fast);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.contact-form select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 1.2rem center;
+    background-size: 1.2rem;
+}
+
+.btn-loading {
+    display: none;
+}
+
+.form-submitting .btn-text {
+    display: none;
+}
+
+.form-submitting .btn-loading {
+    display: inline-block;
+}
+
+/* Map Section */
+.map-section {
+    padding: 0 0 80px;
+}
+
+.map-container {
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+}
+
+/* Contact CTA */
+.contact-cta {
+    background-color: var(--background-secondary);
+    text-align: center;
+}
+
+.contact-cta h2 {
+    margin-bottom: 1.5rem;
+}
+
+.contact-cta p {
+    margin-bottom: 3rem;
+    font-size: 1.8rem;
+    color: var(--text-medium);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-info {
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-hero {
+        padding: 100px 0 40px;
+    }
+    
+    .contact-hero h1 {
+        font-size: 3.2rem;
+    }
+    
+    .contact-hero p {
+        font-size: 1.6rem;
+    }
+    
+    .contact-form-container {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-hero h1 {
+        font-size: 2.8rem;
+    }
+    
+    .contact-info-card {
+        flex-direction: column;
+    }
+    
+    .contact-icon {
+        margin-bottom: 1.5rem;
+        margin-right: 0;
+    }
+}
+
+/* Toast Container - Positioned top right */
+#toast-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Individual Toast Styling */
+.toast {
+    background: #fff;
+    color: #333;
+    min-width: 250px;
+    padding: 16px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-left: 5px solid #333; /* Default border color */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: slideIn 0.3s ease forwards;
+    opacity: 0;
+    transform: translateX(100%);
+}
+
+.toast.error {
+    border-left-color: #ff3b30; /* Red for errors */
+}
+.toast.success {
+    border-left-color: #25D366; /* WhatsApp Green for success */
+}
+
+.toast-message {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Close 'x' button */
+.toast-close {
+    margin-left: 15px;
+    cursor: pointer;
+    color: #999;
+    font-weight: bold;
+}
+
+/* Animations */
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+/* === Custom Modal Styles === */
+.modal-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark dimmed background */
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* The actual white box */
+.modal-box {
+    background: #fff;
+    color: #333;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+/* Animations when active */
+.modal-overlay.active {
+    display: flex;
+    opacity: 1;
+}
+.modal-overlay.active .modal-box {
+    transform: translateY(0);
+}
+
+/* Icon styling */
+.modal-icon {
+    font-size: 50px;
+    color: #25D366; /* WhatsApp Green */
+    margin-bottom: 20px;
+}
+
+.modal-box h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.modal-box p {
+    margin-bottom: 25px;
+    color: #666;
+    line-height: 1.5;
+    font-size: 1.4rem;
+}
+
+/* Buttons inside Modal */
+.modal-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-cancel {
+    background: transparent;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-cancel:hover {
+    background: #f5f5f5;
+    color: #333;
+}/* === Custom Modal Styles === */
+.modal-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark dimmed background */
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* The actual white box */
+.modal-box {
+    background: #fff;
+    color: #333;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+/* Animations when active */
+.modal-overlay.active {
+    display: flex;
+    opacity: 1;
+}
+.modal-overlay.active .modal-box {
+    transform: translateY(0);
+}
+
+/* Icon styling */
+.modal-icon {
+    font-size: 50px;
+    color: #25D366; /* WhatsApp Green */
+    margin-bottom: 20px;
+}
+
+.modal-box h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.modal-box p {
+    margin-bottom: 25px;
+    color: #666;
+    line-height: 1.5;
+    font-size: 1.4rem;
+}
+
+/* Buttons inside Modal */
+.modal-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-cancel {
+    background: transparent;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-cancel:hover {
+    background: #f5f5f5;
+    color: #333;
+}
