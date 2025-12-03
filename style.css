@@ -2127,3 +2127,124 @@ input:checked + .slider:before {
         right: 2rem;
     }
 }
+
+/* ====================== */
+/* MOBILE MENU FIX        */
+/* ====================== */
+
+/* Force the list to stack vertically */
+.nav-mobile .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 0; /* Reset the gap */
+}
+
+/* Reset the left margin that exists on desktop items */
+.nav-mobile .nav-menu li {
+    margin-left: 0;
+    margin-bottom: 2.5rem; /* Add spacing between items */
+    width: 100%;
+}
+
+/* Ensure links behave like block elements for easier tapping */
+.nav-mobile .nav-menu li a {
+    display: block;
+    width: 100%;
+}
+
+/* ====================== */
+/* MOBILE HEADER FIXES    */
+/* ====================== */
+
+@media (max-width: 768px) {
+    /* 1. Make the header thinner on mobile */
+    .header {
+        padding: 1rem 0; /* Reduces padding from 20px to 10px */
+        height: 60px;    /* Force a compact height */
+        background-color: rgba(0, 0, 0, 0.9); /* Make it slightly darker for readability */
+    }
+
+    /* 2. Shrink the logo slightly so it fits the thinner header */
+    #logo_image {
+        height: 35px;
+        width: 35px;
+    }
+
+    .logo-text {
+        font-size: 2rem; /* Slightly smaller text */
+    }
+
+    /* 3. Push the first section down so words aren't covered */
+    /* This targets the Pricing Hero, Services Hero, and generic sections */
+    .pricing-hero, 
+    .services-hero, 
+    .hero {
+        padding-top: 120px; /* extra space at the top */
+    }
+    
+    /* Adjust the hamburger button position to center it in the new height */
+    .hamburger-btn {
+        top: 2px; 
+    }
+}
+
+/* ====================== */
+/* INDEX PAGE UPDATES     */
+/* ====================== */
+
+/* Service Card Link Arrow */
+.service-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    margin-top: auto; /* Pushes to bottom */
+}
+
+.service-link:hover i {
+    transform: translateX(5px);
+    transition: transform 0.3s ease;
+}
+
+/* Portfolio 3-Column Grid */
+.portfolio-grid.three-col {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 992px) {
+    .portfolio-grid.three-col {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-grid.three-col {
+        grid-template-columns: 1fr;
+    }
+    
+    .section-header text-left {
+        text-align: center;
+    }
+}
+
+/* Value Prop Section Background */
+.value-prop {
+    background-color: var(--background-secondary);
+}
+
+/* Process Steps 4-Col */
+.process-steps.four-steps {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 992px) {
+    .process-steps.four-steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 576px) {
+    .process-steps.four-steps {
+        grid-template-columns: 1fr;
+    }
+}

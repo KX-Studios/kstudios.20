@@ -1,7 +1,7 @@
 /* services.css */
 /* Services Hero Section */
 .services-hero {
-    padding: 120px 0 60px;
+    padding: 140px 0 80px; /* Increased top padding for better header clearance */
     background-color: var(--background-primary);
     position: relative;
     overflow: hidden;
@@ -20,22 +20,24 @@
 
 .services-hero-content {
     text-align: center;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     position: relative;
     z-index: 1;
 }
 
 .services-hero h1 {
-    font-size: 4.2rem;
-    margin-bottom: 1.5rem;
+    font-size: 4.8rem;
+    margin-bottom: 2rem;
+    font-weight: 800;
 }
 
 .services-hero p {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: var(--text-medium);
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
+    line-height: 1.6;
 }
 
 /* Detailed Services Section */
@@ -44,73 +46,138 @@
     background-color: var(--background-primary);
 }
 
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+}
+
 .service-card.detailed {
-    padding: 3rem;
-    margin-bottom: 3rem;
+    padding: 4rem 3rem;
+    background-color: var(--background-tertiary); /* Make cards pop against primary bg */
     border: 1px solid var(--border-color);
+    border-radius: var(--border-radius-xl);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.service-card.detailed:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border-color: var(--primary-color);
+}
+
+/* Coming Soon Badge */
+.service-badge.soon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(245, 158, 11, 0.15); /* Amber tint */
+    color: #fbbf24; /* Amber text */
+    padding: 0.5rem 1.2rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid rgba(245, 158, 11, 0.3);
 }
 
 .service-card.detailed .service-icon {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    font-size: 3.5rem;
+    color: var(--primary-color);
+    background: rgba(59, 130, 246, 0.1);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
 }
 
 .service-card.detailed h3 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     margin-bottom: 1.5rem;
+    color: var(--text-dark);
 }
 
 .service-content p {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     font-size: 1.6rem;
+    color: var(--text-medium);
+    line-height: 1.7;
 }
 
 .service-features {
     margin-bottom: 3rem;
+    padding-left: 0;
 }
 
 .service-features li {
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
     font-size: 1.5rem;
+    color: var(--text-medium);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.service-features li i {
+    color: var(--success-color); /* Green checks */
+    font-size: 1.4rem;
 }
 
 .service-pricing {
-    margin: 2.5rem 0;
+    margin: 3rem 0;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
 }
 
 .service-pricing h4 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: var(--text-medium);
+    font-weight: 500;
 }
 
 .service-pricing span {
     color: var(--primary-color);
     font-weight: var(--font-weight-bold);
+    font-size: 2rem;
+    display: block;
+    margin-top: 0.5rem;
 }
 
 /* Services CTA */
 .services-cta {
     background-color: var(--background-secondary);
     text-align: center;
+    padding: 100px 0;
 }
 
 .services-cta h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 3.6rem;
 }
 
 .services-cta p {
-    margin-bottom: 3rem;
-    font-size: 1.8rem;
+    margin-bottom: 4rem;
+    font-size: 2rem;
     color: var(--text-medium);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     .services-hero {
-        padding: 100px 0 40px;
+        padding: 120px 0 60px;
     }
     
     .services-hero h1 {
-        font-size: 3.2rem;
+        font-size: 3.6rem;
     }
     
     .services-hero p {
@@ -119,5 +186,9 @@
     
     .service-card.detailed {
         padding: 2.5rem;
+    }
+    
+    .services-cta h2 {
+        font-size: 2.8rem;
     }
 }
